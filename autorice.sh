@@ -25,13 +25,13 @@ light_magenta=$(echo ${colors[13]} |tr -d " ")
 light_cyan=$(echo ${colors[14]} |tr -d " ")
 white=$(echo ${colors[15]} |tr -d " ")
 
-sed -i "s/separator.*/separator\ $light_grey/g" ~/.i3/config
-sed -i "s/background.*/background\ #2F343F/g" ~/.i3/config
-sed -i "s/statusline.*/statusline\ $white/g" ~/.i3/config
-sed -i "s/focused_workspace.*/focused_workspace\ $light_blue\ $light_blue\ $white/g" ~/.i3/config
-sed -i "s/active_workspace.*/active_workspace\ #2F343F\ #2F343F\ $light_grey/g" ~/.i3/config
-sed -i "s/inactive_workspace.*/inactive_workspace\ #2F343F\ #2F343F\ $white/g" ~/.i3/config
-sed -i "s/urgent_workspace.*/urgent_workspace\ #2F343F\ $red\ #2F343F/g" ~/.i3/config
+sed -i "s/separator .*/separator\ $light_blue/g" ~/.i3/config
+sed -i "s/background .*/background\ #2F343F/g" ~/.i3/config
+sed -i "s/statusline .*/statusline\ $white/g" ~/.i3/config
+sed -i "s/focused_workspace .*/focused_workspace\ $light_blue\ $light_blue\ $white/g" ~/.i3/config
+sed -i "s/active_workspace .*/active_workspace\ #2F343F\ #2F343F\ $light_grey/g" ~/.i3/config
+sed -i "s/inactive_workspace .*/inactive_workspace\ #2F343F\ #2F343F\ $white/g" ~/.i3/config
+sed -i "s/urgent_workspace .*/urgent_workspace\ #2F343F\ $red\ #2F343F/g" ~/.i3/config
 
 sed -i "s/client\.focused.*/client\.focused\ $light_blue\ $light_blue\ $white\ #2F343F/g" ~/.i3/config
 sed -i "s/client\.focused_inactive.*/client\.focused_inactive\ #2F343F\ #2F343F\ $brown\ #2F343F/g" ~/.i3/config
@@ -45,7 +45,7 @@ sed -i "s/color_bad.*/color_bad\ =\ \"$light_red\"/g" ~/.i3status.conf
 #theme rofi
 sed -i "s/rofi\.color-normal:.*/rofi\.color-normal:\ #2F343F,\ $white,\ #2F343F,\ #2F343F,\ $light_blue/g" ~/.config/rofi/config
 sed -i "s/rofi\.color-urgent:.*/rofi\.color-urgent:\ #2F343F,\ $red,\ #2F343F,\ #2F343F,\ $light_blue/g" ~/.config/rofi/config
-sed -i "s/rofi\.color-active:.*/rofi\.color-active:\ #2F343F,\ $light_red\ #2F343F,\ #2F343F,\ $light_blue/g" ~/.config/rofi/config
+sed -i "s/rofi\.color-active:.*/rofi\.color-active:\ #2F343F,\ $light_red,\ #2F343F,\ #2F343F,\ $light_blue/g" ~/.config/rofi/config
 sed -i "s/rofi\.color-window:.*/rofi\.color-window:\ #2F343F/g" ~/.config/rofi/config
 
 feh  --bg-scale $1
